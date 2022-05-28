@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1600px;
+    color: rgb(0, 0, 0);
+    background-color: lightcoral;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+main{
+    background-color: white;
+    height: 1080px;
+}
+
+
+header{
+    background-color: rgb(152, 236, 236);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cabecalho__opt{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.cabecalho__logo{
+
+    max-width: 250px;
+}
