@@ -1,41 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Sarala:wght@400;700&display=swap');
+:root{
+
+    --cor1: #92c4ca;
+    --cor2: #04ADBF;
+    --cor3: #F2A663;
+    --cor4: #F28705;
+    --cor5: #0D0D0D;
+
+
+    --fonte-padrao: 'Sarala', sans-serif;
+    --fonte-destaque: 'Modak', cursive;
+
+}
+
 *{
     padding: 0;
     margin: 0;
 }
-
 body{
     max-width: 1600px;
     color: rgb(0, 0, 0);
-    background-color: lightcoral;
+    background-image: url("imagens/wallpaperflare.com_wallpaper.jpg");
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 main{
-    background-color: white;
-    height: 1080px;
+    
+    background-color: var(--cor1);
+    height: 700px;
+    font-family: var(--fonte-padrao);
+    
+}
+
+.sobre{
+    
+    background-color: var(--cor1);
+    height: 700px;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+.tit__sobre,
+.tit__principal{    
+    padding-top: 30px;    
+    color: var(--cor5);
+    text-align: center;
+
+}
+.p__sobre{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
 header{
-    background-color: rgb(152, 236, 236);
+    background-color: rgb(237, 237, 237);
+    
 }
 
 .cabecalho{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;    
+    align-items: center;
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    
+    
 }
 
 .cabecalho__opt{   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: flex;    
+    justify-content: space-between;   
 
+    text-decoration: none;
+    
 }
+.cabecalho__h{
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--cor2)
+}
+.cabecalho__h:hover{
+    color: var(--cor1);
+}
+
+.cabecalho__a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+.cabecalho__a:hover{
+    color: var(--cor1);
+}
+
 .cabecalho__logo{
 
     max-width: 250px;
+}
+
+#contador{
+    width: 400px;
+    background-color: #ffffff;    
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
+}
+
+
+
+
+
+footer{
+    background-color: white;
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    margin: auto;    
 }
