@@ -5,7 +5,7 @@
     --cor2: #04ADBF;
     --cor3: #F2A663;
     --cor4: #F28705;
-    --cor5: #0D0D0D;
+    --cor5: #3e3d3d;
 
 
     --fonte-padrao: 'Sarala', sans-serif;
@@ -45,6 +45,8 @@ main{
     padding-top: 30px;    
     color: var(--cor5);
     text-align: center;
+    font-size: 2.5em;
+    
 
 }
 .p__sobre{
@@ -98,10 +100,19 @@ header{
     max-width: 250px;
 }
 
+h2{
+    margin-left: 15px;
+    font-family: var(--fonte-padrao);
+    color: var(--cor2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.477);
+    font-size: 2em;
+    
+}
 #contador{
     width: 400px;
     background-color: #ffffff;    
     padding: 15px;
+    margin-left: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
 }
