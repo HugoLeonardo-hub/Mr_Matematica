@@ -1,3 +1,4 @@
+//CONTADOR
 function contar(){
     let ini = document.getElementById('txti')
     let fim = document.getElementById('txtf')
@@ -33,7 +34,7 @@ function contar(){
      res.innerHTML += `\u{1F3c1}`
     }
 }
-
+//TABUADA
 function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('sel-tab')
@@ -54,5 +55,34 @@ function tabuada(){
         }
 
     }
+
+}
+//CALCULADORA
+function insert(num){
+
+    var numero = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = numero + num;    
+
+}
+function clean(){
+
+    document.getElementById('resultado').innerHTML = "";
+}
+function back(){
+
+    var resultado = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+
+}
+function calcular(){
+
+    var resultado = document.getElementById('resultado').innerHTML;
+
+    if(resultado){
+        document.getElementById('resultado').innerHTML = eval(resultado);
+    }else{
+        document.getElementById('resultado').innerHTML = 'nada para calular'
+    }
+
 
 }

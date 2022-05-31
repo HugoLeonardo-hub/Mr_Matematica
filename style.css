@@ -172,7 +172,7 @@ table{
     color: #ffffff;
 
 }
-.resultado{
+#resultado{
     box-sizing: border-box;
     text-align: center;    
     margin-left: 29px;
