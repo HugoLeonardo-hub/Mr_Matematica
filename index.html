@@ -33,37 +33,76 @@
     </header>
 
     <main>
-        <h1 class="tit__principal">Vai uma ajudinha ai?</h1>
+        <h1 class="tit__principal">Any help there?</h1>
 
-        <H2>Contador</H2>
-        <section id="contador">
-            <div id="dados">
-                <p>Início: <input type="number" name="inicio" id="txti"></p> 
-                <p>Fim: <input type="number" name="fim" id="txtf"></p>
-                <p>Passo: <input type="number" name="passo" id="txtp"></p>
-                <p><input type="button" value="contar" onclick="contar()"></p>
-            </div>
+        
+        <section class="itens">
+
+            <section id="contador">
+                <H2>Contador</H2>
+                <div id="dados">
+                    <p>Início: <input type="number" name="inicio" id="txti"></p>
+                    <p>Fim: <input type="number" name="fim" id="txtf"></p>
+                    <p>Passo: <input type="number" name="passo" id="txtp"></p>
+                    <p><input type="button" value="contar" onclick="contar()"></p>
+                </div>
+                <div id="res">
+                </div>
+            </section>
+            
+            <section id="tabuada">
+                <h2>Tabuada</h2>
+                <div>
+                    <p id="numero">Número: <input type="number" name="number" id="txtn"> <input type="button" value="Gerar tabuada" onclick="tabuada()"></p>
+                </div>
+                
+                <div>
+                    <select name="tabuada" id="sel-tab" size="10">
+                        <option>Digite um número acima</option>
+                    </select>
+                </div>
+            
+            </section>
+            
+            <section id="calculadora">
+                <h2>Calculadora</h2>
+                <p class="resultado">25</p>
+                <table>
+                    <tr>
+                        <td><button class="calculadora__btn">C</button></td>
+                        <td><button class="calculadora__btn"><</button></td>
+                        <td><button class="calculadora__btn">/</button></td>
+                        <td><button class="calculadora__btn">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__btn">7</button></td>
+                        <td><button class="calculadora__btn">8</button></td>
+                        <td><button class="calculadora__btn">9</button></td>
+                        <td><button class="calculadora__btn">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__btn">4</button></td>
+                        <td><button class="calculadora__btn">5</button></td>
+                        <td><button class="calculadora__btn">6</button></td>
+                        <td><button class="calculadora__btn">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculadora__btn">1</button></td>
+                        <td><button class="calculadora__btn">2</button></td>
+                        <td><button class="calculadora__btn">3</button></td>
+                        <td rowspan="2"><button class="calculadora__btn" style="height: 106px;">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="calculadora__btn" style="width: 166px;">0</button></td>
+                        <td><button class="calculadora__btn" >.</button></td>
+                    </tr>
+
+                </table>
+            </section>
 
 
-            <div id="res">
-
-            </div>
-
-        </section>
-
-
-        <section id="tabuada">
-
-        </section>
-
-
-        <section id="calculadora">
-
-        </section>
-
-
-        <section id="primos">
-
+            <section id="primos">
+            </section>
         </section>
     </main>
     

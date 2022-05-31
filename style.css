@@ -24,13 +24,25 @@ body{
     box-sizing: border-box;
     margin: 0 auto;
 }
-
-main{
+header{
+    background-color: rgb(237, 237, 237);
     
-    background-color: var(--cor1);
-    height: 700px;
+}
+main{
+    padding: 15px;
+
+    background-image: linear-gradient(45deg, var(--cor2), var(--cor1));
+    height: 100%;
     font-family: var(--fonte-padrao);
     
+}
+
+.itens{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 30px;
 }
 
 .sobre{
@@ -40,12 +52,18 @@ main{
     font-family: var(--fonte-padrao);
     text-align: center;
 }
+
 .tit__sobre,
-.tit__principal{    
-    padding-top: 30px;    
-    color: var(--cor5);
+.tit__principal{   
+
+    padding: 30px;   
+    color: #ffffff;
     text-align: center;
     font-size: 2.5em;
+    text-shadow: 3px 2px 1px rgb(177, 176, 176);
+    
+    
+  
     
 
 }
@@ -55,15 +73,13 @@ main{
 }
 
 
-header{
-    background-color: rgb(237, 237, 237);
-    
-}
+
 
 .cabecalho{
     display: flex;
     flex-direction: column;    
     align-items: center;
+    
 
     font-family: var(--fonte-destaque);
     font-size: 2em;
@@ -81,7 +97,9 @@ header{
 .cabecalho__h{
     margin-right: 20px;
     text-decoration: none;
-    color: var(--cor2)
+    color: var(--cor2);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 1px rgba(206, 204, 204, 0.596);
 }
 .cabecalho__h:hover{
     color: var(--cor1);
@@ -90,6 +108,9 @@ header{
 .cabecalho__a{
     text-decoration: none;
     color: var(--cor2);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 1px rgba(206, 204, 204, 0.596);
+    
 }
 .cabecalho__a:hover{
     color: var(--cor1);
@@ -105,19 +126,64 @@ h2{
     font-family: var(--fonte-padrao);
     color: var(--cor2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.477);
-    font-size: 2em;
+    font-size: 2.3em;
+    text-align: center;
+    padding-bottom: 20px;
     
 }
 #contador{
     width: 400px;
     background-color: #ffffff;    
-    padding: 15px;
-    margin-left: 15px;
+    padding: 15px;    
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
 }
+#tabuada{
+    width: 400px;
+    background-color: #ffffff;    
+    padding: 15px;    
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
+}
+#calculadora{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 15px;         
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
+}
+table{
+    padding-left: 25px;
+}
 
+.calculadora__btn{
+    width: 80px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: var(--cor4);
+}
+.calculadora__btn:hover{
+    background-color: var(--cor3);
+    color: #ffffff;
 
+}
+.resultado{
+    box-sizing: border-box;
+    text-align: center;    
+    margin-left: 29px;
+    margin-right: 32px;
+    background-color: var(--cor3);
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+
+} 
 
 
 
