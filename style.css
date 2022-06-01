@@ -152,8 +152,15 @@ h2{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
 }
+#conjuntos{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 15px;         
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.553);
+}
 table{
-    padding-left: 25px;
+    padding-left: 5px;
 }
 
 .calculadora__btn{
