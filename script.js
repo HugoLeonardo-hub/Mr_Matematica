@@ -34,7 +34,7 @@ function contar(){
      res.innerHTML += `\u{1F3c1}`
     }
 }
-//TABUADA
+//TABUADA 
 function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('sel-tab')
@@ -84,5 +84,12 @@ function calcular(){
         document.getElementById('resultado').innerHTML = 'nada para calular'
     }
 
+
+}
+//CONJUTOS
+function escolha(){
+
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('sel-tab')
 
 }
