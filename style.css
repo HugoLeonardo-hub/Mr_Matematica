@@ -49,9 +49,10 @@ main{
 .sobre{
     
     background-color: var(--cor1);
-    height: 700px;
+    height: 100%;
     font-family: var(--fonte-padrao);
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .tit__sobre,
